@@ -47,11 +47,24 @@ body {
     margin-top: 25px;
     border-radius: 5px;
     padding: 5px;
+    font-size: 1.0vw;
 }
 
 .search-list {
     margin-top: 25px;
     border-top: solid 2px black;
+}
+
+.search-list #past-searches {
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.0vw;
+    visibility: hidden;
 }
 
 .results-box {
@@ -74,7 +87,7 @@ body {
 }
 
 .forecast h2 {
-    font-size: 1.75vw;
+    font-size: 1.25vw;
     font-weight: bolder;
 }
 
