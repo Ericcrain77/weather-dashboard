@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #AEAEAE;
+    --secondary-color: #2D3E50;
+    --tertiary-color: #3462BB;
+    --quaternary-color: #20094B;
+    --quinary-color: #5098E6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header {
+    background: linear-gradient(to right, var(--tertiary-color), var(--quaternary-color));
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    width: 20%;
+    padding: 20px 30px 0 30px;
+}
+
+.search-box h2 {
+    font-size: 1.75vw;
+    font-weight: bolder;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1.25vw;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.searchBtn {
+    background-color: var(--quinary-color);
+    color: white;
+    border: none;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-list {
+    margin-top: 25px;
+    border-top: solid 2px black;
+}
+
+.results-box {
+    width: 80%;
+    padding: 20px 30px 0 30px;
+}
+
+.results-box #results-city {
+    font-size: 1.75vw;
+    font-weight: bolder;
+}
+
+.results-box div p {
+    padding-left: 15px;
+    font-size: 1.0vw;
+}
+
+.forecast {
+    margin: 45px 0 0 0;
+}
+
+.forecast h2 {
+    font-size: 1.75vw;
+    font-weight: bolder;
+}
+
+.card {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.card-text {
+    font-size: 1.0vw;
+}

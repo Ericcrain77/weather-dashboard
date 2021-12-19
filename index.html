@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./develop/assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class="p-3 mb-2 text-white header">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div>
+        <div class="row align-items-start">
+            <section class="search-box">
+                <h2>Search for a City:</h2>
+                <input class="search-input" placeholder="City Name"/>
+                <button class="searchBtn">Search</button>
+                <div class="search-list">
+                    <ul></ul>
+                </div>
+            </section>
+
+            <section class="results-box">
+                <div class="current-conditions border border-dark">
+                    <div>
+                        <h2 id="results-city"></h2>
+                        <img src="" alt="" id="currentIcon">
+                    </div>
+                    <div>
+                        <p>Temp:</p>
+                    </div>
+                    <div>
+                        <p>Wind:</p>
+                    </div>
+                    <div>
+                        <p>Humidity:</p>
+                    </div>
+                    <div>
+                        <p>UV Index:</p>
+                    </div>
+                </div>
+
+                <div class="forecast">
+                    <h2>5-Day Forecast:</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div>
+                                    <h5 id="day-0"></h5>
+                                </div>
+                                <img src="" alt="" id="img-0">
+                                <div class="card-body card-text">
+                                    <p id="temp-0"></p>
+                                    <p id="wind-0"></p>
+                                    <p id="hum-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div>
+                                    <h5 id="day-1"></h5>
+                                </div>
+                                <img src="" alt="" id="img-1">
+                                <div class="card-body card-text">
+                                    <p id="temp-1"></p>
+                                    <p id="wind-1"></p>
+                                    <p id="hum-1"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div>
+                                    <h5 id="day-2"></h5>
+                                </div>
+                                <img src="" alt="" id="img-2">
+                                <div class="card-body card-text">
+                                    <p id="temp-2"></p>
+                                    <p id="wind-2"></p>
+                                    <p id="hum-2"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div>
+                                    <h5 id="day-3"></h5>
+                                </div>
+                                <img src="" alt="" id="img-3">
+                                <div class="card-body card-text">
+                                    <p id="temp-3"></p>
+                                    <p id="wind-3"></p>
+                                    <p id="hum-3"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div>
+                                    <h5 id="day-4"></h5>
+                                </div>
+                                <img src="" alt="" id="img-4">
+                                <div class="card-body card-text">
+                                    <p id="temp-4"></p>
+                                    <p id="wind-4"></p>
+                                    <p id="hum-4"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./develop/assets/js/script.js"></script>
+</body>
+</html>
