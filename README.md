@@ -32,7 +32,8 @@ SO THAT I can plan a trip accordingly
 
 ## Technologies
 This application utilizes the following npm packages:
-* 
+* Moment.js
+* One Call API
 
 ## Questions
 Reach out to me using my [Github account](https://github.com/Ericcrain77) or my [email](ericcrain77@gmail.com).

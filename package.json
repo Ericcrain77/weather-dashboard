@@ -1,0 +1,23 @@
+{
+  "name": "weather-dashboard",
+  "version": "1.0.0",
+  "description": "[Deployed Application]()",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ericcrain77/weather-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ericcrain77/weather-dashboard/issues"
+  },
+  "homepage": "https://github.com/Ericcrain77/weather-dashboard#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
