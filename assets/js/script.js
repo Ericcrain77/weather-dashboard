@@ -1,5 +1,7 @@
 // setting variables
 var pastSearches = document.querySelector('#past-searches');
+var searchBtn = document.querySelector('.searchBtn');
+var searchInput = document.querySelector('#search-input');
 var cityNameEl = document.querySelector('#results-city');
 var currentDate = document.querySelector('#current-date');
 var currentTemp = document.querySelector('#current-temp');
@@ -41,22 +43,24 @@ setInterval(() => {
 
 }, 1000);
 
-function searchForCity(event) {
+function formEventHandler(event) {
+    console.log(searchInput);
+
     event.preventDefault();
 
-    var searchedCity = cityNameEl.value;
+    var searchedCity = searchInput.value;
     
-    if(searchCityHistory.indexOf(searchedCity) === -1){
-        searchCityHistory.push(searchedCity);
-        var searchedCitiesButtonEl = document.createElement('button');
-        searchedCitiesButtonEl.innerText = searchedCity;
-        searchedCitiesButtonEl.addEventListener('click', function(){
-            getLatAndLon(searchedCity);
-        });
+    // if(searchCityHistory.indexOf(searchedCity) === -1){
+    //     searchCityHistory.push(searchedCity);
+    //     var searchedCitiesButtonEl = document.createElement('button');
+    //     searchedCitiesButtonEl.innerText = searchedCity;
+    //     searchedCitiesButtonEl.addEventListener('click', function(){
+    //         getLatAndLon(searchedCity);
+    //     });
 
-        pastSearches.appendChild(searchedCitiesButtonEl);
+    //     pastSearches.appendChild(searchedCitiesButtonEl);
 
-    }
+    // }
 
     getLatAndLon(searchedCity);
 
@@ -77,15 +81,15 @@ function loadSearchedCities() {
 
     searchHistory = JSON.parse(searchHistory);
 
-    searchHistory.forEach(function(name) {
-        var searchedCitiesButtonEl = document.createElement('button');
-        searchedCitiesButtonEl.innerText = name;
-        searchedCitiesButtonEl.addEventListener('click', function(){
-            getLatAndLon(name);
-        });
+    // searchHistory.forEach(function(name) {
+    //     var searchedCitiesButtonEl = document.createElement('button');
+    //     searchedCitiesButtonEl.innerText = name;
+    //     searchedCitiesButtonEl.addEventListener('click', function(){
+    //         getLatAndLon(name);
+    //     });
 
-        pastSearches.appendChild(searchedCitiesButtonEl);
-    })
+    //     pastSearches.appendChild(searchedCitiesButtonEl);
+    // })
 };
 
 function getLatAndLon(city) {
@@ -111,9 +115,9 @@ function getWeatherData(lat, lon, city) {
     fetch(apiUrl).then(function(response){
         if(response.ok){
             response.json().then(function(data){
-                currentForecast(data.current.temp, data.current.wind, data.current.humidity, data.current.uvi, data.current.weather[0].icon, city);
+                currentForecast(data.current.temp, data.current.wind_speed, data.current.humidity, data.current.uvi, data.current.weather[0].icon, city);
 
-                fiveDayForecast(data.daily);
+                // fiveDayForecast(data.daily);
             })
         } else {
             console.log(err);
@@ -123,7 +127,7 @@ function getWeatherData(lat, lon, city) {
 
 function currentForecast(temp, wind, humidity, uvi, icon, city){
     currentTemp.innerHTML = temp + '\xB0F';
-    currentWind.innerHTML = wind + 'MPH';
+    currentWind.innerHTML = wind + ' MPH';
     currentHum.innerHTML = humidity + '%';
     currentUv.innerHTML = uvi;
     currentIcon.setAttribute('src', 'https://openweathermap.org/img/wn/' + icon + '@2x.png');
@@ -137,3 +141,7 @@ function currentForecast(temp, wind, humidity, uvi, icon, city){
         currentUv.style.backgroundColor = 'yellow';
     };
 };
+
+searchBtn.addEventListener("click", formEventHandler);
+
+loadSearchedCities();

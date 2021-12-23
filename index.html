@@ -18,8 +18,8 @@
             <section class="search-box">
                 <h2>Search for a City:</h2>
                 <form>
-                    <input class="search-input" placeholder="City Name"/>
-                    <button class="searchBtn" onclick="searchForCity()">Search</button>
+                    <input type="text" id="search-input" placeholder="City Name"/>
+                    <button type="submit" class="searchBtn">Search</button>
                 </form>
                 <div class="search-list">
                     <div id="past-searches">
@@ -31,7 +31,9 @@
             <section class="results-box">
                 <div class="current-conditions border border-dark">
                     <div>
-                        <h2 id="results-city"> <span id="current-date"></span></h2><img src="" alt="" id="currentIcon">
+                        <h2 id="results-city"></h2>
+                        <span id="current-date"></span>
+                        <img src="" alt="" id="currentIcon">
                     </div>
                     <div>
                         <p>Temperature: <span id="current-temp"></span></p>
@@ -121,7 +123,6 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

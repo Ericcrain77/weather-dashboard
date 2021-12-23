@@ -32,7 +32,7 @@ body {
     font-weight: bolder;
 }
 
-.search-input {
+#search-input {
     width: 100%;
     font-size: 1.25vw;
     margin-top: 5px;
@@ -75,6 +75,17 @@ body {
 .results-box #results-city {
     font-size: 1.75vw;
     font-weight: bolder;
+    padding: 10px;
+}
+
+.results-box #current-date {
+    font-size: 1.75vw;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.results-box #currentIcon {
+    width: 75px;
 }
 
 .results-box div p {
