@@ -25,5 +25,10 @@ var forecastDay5 = document.querySelector('#day-4');
 var day5Temp = document.querySelector('#temp-4');
 var day5Wind = document.querySelector('#wind-4');
 var day5Hum = document.querySelector('#hum-4');
+
+var currentWeather = {
+    
+}
+
 var apiKey = 'a0261386ac4ee516e814165ba45ab66c';
 
