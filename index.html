@@ -17,11 +17,13 @@
         <div class="row align-items-start">
             <section class="search-box">
                 <h2>Search for a City:</h2>
-                <input class="search-input" placeholder="City Name"/>
-                <button class="searchBtn">Search</button>
+                <form>
+                    <input class="search-input" placeholder="City Name"/>
+                    <button class="searchBtn" onclick="searchForCity()">Search</button>
+                </form>
                 <div class="search-list">
                     <div id="past-searches">
-                        <ul></ul>
+                        <!-- Where the past searched cities will show up -->
                     </div>
                 </div>
             </section>
@@ -29,8 +31,7 @@
             <section class="results-box">
                 <div class="current-conditions border border-dark">
                     <div>
-                        <h2 id="results-city">City <span id="current-date"></span></h2>
-                        <img src="" alt="" id="currentIcon">
+                        <h2 id="results-city"> <span id="current-date"></span></h2><img src="" alt="" id="currentIcon">
                     </div>
                     <div>
                         <p>Temperature: <span id="current-temp"></span></p>
