@@ -44,13 +44,13 @@ searchBtn.onclick = function () {
     var oldSearch = JSON.parse(localStorage.getItem('city'));
     oldSearch.push(newCity);
 
+    oldSearch = oldSearch.filter( function(item, index, inputArray) {
+        return inputArray.indexOf(item) == index;
+    });
+
     localStorage.setItem('city', JSON.stringify(oldSearch));
 
-    function removeDuplicates(data) {
-        return data.filter((value, index) => data.indexOf(value) === index);
-    };
-
-    removeDuplicates(oldSearch);
+    
 
     function makeButton() {
         var newCity = localStorage.getItem("city")
