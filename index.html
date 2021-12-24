@@ -22,7 +22,7 @@
                     <button type="submit" class="searchBtn">Search</button>
                 </form>
                 <div class="search-list">
-                    <div id="past-searches">
+                    <div class="past-searches">
                         <!-- Where the past searched cities will show up -->
                     </div>
                 </div>
@@ -50,79 +50,16 @@
                 </div>
 
                 <div class="forecast">
-                    <h2>5-Day Forecast:</h2>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card">
-                                <div>
-                                    <h4 id="day-0">12/24/2021</h4>
-                                </div>
-                                <img src="" alt="tomorrow-icon" id="img-0">
-                                <div class="card-body card-text">
-                                    <p>Temp: <span id="temp-0"></span></p>
-                                    <p>Wind: <span id="wind-0"></span></p>
-                                    <p>Humidity: <span id="hum-0"></span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div>
-                                    <h4 id="day-2"></h4>
-                                </div>
-                                <img src="" alt="day-1-icon" id="img-1">
-                                <div class="card-body card-text">
-                                    <p>Temp: <span id="temp-1"></span></p>
-                                    <p>Wind: <span id="wind-1"></span></p>
-                                    <p>Humidity: <span id="hum-1"></span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div>
-                                    <h4 id="day-2"></h4>
-                                </div>
-                                <img src="" alt="day-2-icon" id="img-2">
-                                <div class="card-body card-text">
-                                    <p>Temp: <span id="temp-2"></span></p>
-                                    <p>Wind: <span id="wind-2"></span></p>
-                                    <p>Humidity: <span id="hum-2"></span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div>
-                                    <h4 id="day-3"></h4>
-                                </div>
-                                <img src="" alt="day-3-icon" id="img-3">
-                                <div class="card-body card-text">
-                                    <p>Temp: <span id="temp-3"></span></p>
-                                    <p>Wind: <span id="wind-3"></span></p>
-                                    <p>Humidity: <span id="hum-3"></span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div>
-                                    <h4 id="day-4"></h4>
-                                </div>
-                                <img src="" alt="day-4-icon" id="img-4">
-                                <div class="card-body card-text">
-                                    <p>Temp: <span id="temp-4"></span></p>
-                                    <p>Wind: <span id="wind-4"></span></p>
-                                    <p>Humidity: <span id="hum-4"></span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   <h2 id="five-day-forecast"></h2>
+                     <div class="row" id="forecast-cards">
+                        <!-- Where Forecast Cards are generated -->
+                    </div> 
                 </div>
             </section>
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

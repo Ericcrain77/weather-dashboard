@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Ericcrain77/weather-dashboard#readme",
   "dependencies": {
+    "jquery": "^3.6.0",
     "moment": "^2.29.1"
   }
 }

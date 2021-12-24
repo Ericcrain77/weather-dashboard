@@ -55,7 +55,7 @@ body {
     border-top: solid 2px black;
 }
 
-.search-list #past-searches {
+#past-search-btn {
     background-color: var(--primary-color);
     color: black;
     border: none;
@@ -64,7 +64,6 @@ body {
     border-radius: 5px;
     padding: 5px;
     font-size: 1.0vw;
-    visibility: hidden;
 }
 
 .results-box {
@@ -107,9 +106,13 @@ body {
     margin: 45px 0 0 0;
 }
 
-.forecast h2 {
+.forecast #five-day-forecast {
     font-size: 1.25vw;
     font-weight: bolder;
+}
+
+.forecast #forecast-icon {
+    width: 100px;
 }
 
 .card {
@@ -117,7 +120,7 @@ body {
     background-color: var(--secondary-color);
 }
 
-.card h4 {
+.forecast-card-date {
     font-size: 1.0vw;
     font-weight: bolder;
     padding: 10px;

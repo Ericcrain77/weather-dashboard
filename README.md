@@ -31,7 +31,7 @@ SO THAT I can plan a trip accordingly
 ![]()
 
 ## Technologies
-This application utilizes the following npm packages:
+This application utilizes the following:
 * Moment.js
 * One Call API
 
