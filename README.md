@@ -23,12 +23,10 @@ I WANT to see the weather outlook for multiple cities
 
 SO THAT I can plan a trip accordingly
 
-## Screenshots
+## Screenshot
 
-![]()
+![Weather-Dashboard](assets/images/Weather-Dashboard.png)
 
-
-![]()
 
 ## Technologies
 This application utilizes the following:
